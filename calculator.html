@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel ="stylesheet" href ="calculator.css">
+</head>
+<body>
+   
+         <input id ="one" type="text" value="0">
+        <input id ="two" type ="text" value ="0" disabled>
+        <input id="result" type ="button" onclick="calc()" value="=">
+        
+   
+    <script>
+    
+    function calc(){
+        let num1= Number(document.getElementById("one").value)
+        let num2= Number(document.getElementById("two").value)
+               
+
+         document.getElementById("two").value = num1 + num2
+       
+     }
+
+ 
+
+    </script>
+</body>
+</html>
